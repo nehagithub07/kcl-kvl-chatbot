@@ -212,7 +212,11 @@ export default function Chatbot() {
         <div className="lab-chat" inert={drawerOpen}>
           <header className="chat-heading">
             <div className="chat-heading-title">
-              <button ref={historyToggleRef} className="history-toggle icon-button" type="button" aria-label={history.sidebarOpen ? "Hide chat history" : "Show chat history"} title={history.sidebarOpen ? "Hide chat history" : "Show chat history"} aria-controls="chat-history" aria-expanded={Boolean(history.sidebarOpen)} onClick={toggleHistory}>⋯</button>
+              <button ref={historyToggleRef} className="history-toggle icon-button" type="button" aria-label={history.sidebarOpen ? "Hide chat history" : "Show chat history"} title={history.sidebarOpen ? "Hide chat history" : "Show chat history"} aria-controls="chat-history" aria-expanded={Boolean(history.sidebarOpen)} onClick={toggleHistory}>
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
               <div><h1>Virtual Lab Assistant</h1><p>KCL &amp; KVL · One conversation</p></div>
             </div>
             <div className="header-actions">
