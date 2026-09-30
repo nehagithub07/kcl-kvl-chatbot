@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "incremental": false,
+    "rootDir": "src",
+    "outDir": ".test-build"
+  },
+  "include": ["src/lib/*.ts", "src/data/**/*", "src/types/chatbot.ts"],
+  "exclude": ["node_modules"]
+}
